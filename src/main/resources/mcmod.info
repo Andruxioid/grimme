@@ -1,0 +1,16 @@
+[
+{
+  "modid": "grime",
+  "name": "Grime Mod",
+  "description": "Модовыкидыш.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["ExampleDude"],
+  "credits": "Спасибо тем, кому спасибо",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
