@@ -5,6 +5,7 @@ import com.duha.grimme.tabs.GrimmeTab;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
@@ -22,7 +23,16 @@ public class ItemBase extends Item {
         this.name = name;
         setUnlocalizedName(name);
         setRegistryName(name);
-        setCreativeTab(GrimmeTab.GrimmeTab);
+        this.setCreativeTab(Tabs.tab);
+    }
+
+    public static class Tabs {
+        public static final CreativeTabs tab = new CreativeTabs("grimme") {
+            @Override
+            public ItemStack getTabIconItem() {
+                return new ItemStack(ModItems.aegurRelic);
+            }
+        };
     }
 
     public ItemBase withTooltip(String tooltip) {
