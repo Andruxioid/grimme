@@ -15,7 +15,7 @@ import org.apache.logging.log4j.Logger;
 @Mod(modid = Grimme.MODID, name = Grimme.NAME, version = Grimme.VERSION)
 public class Grimme
 {
-    public static final String MODID = "grime";
+    public static final String MODID = "grimme";
     public static final String NAME = "Grime Mod";
     public static final String VERSION = "0.1";
 
