@@ -6,11 +6,11 @@ import net.minecraftforge.registries.IForgeRegistry;
 
 public class ModItems {
 
-    public static ItemBase aegurRelic = new ItemBase("aegur_relic").setCreativeTab(CreativeTabs.MISC);
-    public static ItemBase orutaRelic = new ItemBase("oruta_relic").setCreativeTab(CreativeTabs.MISC);
-    public static ItemBase gerretRelic = new ItemBase("gerret_relic").setCreativeTab(CreativeTabs.MISC);
-    public static ItemBase maganRelic = new ItemBase("magan_relic").setCreativeTab(CreativeTabs.MISC);
-    public static ItemBase humatRelic = new ItemBase("humat_relic").setCreativeTab(CreativeTabs.MISC);
+    public static ItemBase aegurRelic = new ItemBase("aegur_relic").setCreativeTab(CreativeTabs.MISC).withTooltip("grimme.info.aegur_relic");
+    public static ItemBase orutaRelic = new ItemBase("oruta_relic").setCreativeTab(CreativeTabs.MISC).withTooltip("grimme.info.oruta_relic");
+    public static ItemBase gerretRelic = new ItemBase("gerret_relic").setCreativeTab(CreativeTabs.MISC).withTooltip("grimme.info.gerret_relic");
+    public static ItemBase maganRelic = new ItemBase("magan_relic").setCreativeTab(CreativeTabs.MISC).withTooltip("grimme.info.magan_relic");
+    public static ItemBase humatRelic = new ItemBase("humat_relic").setCreativeTab(CreativeTabs.MISC).withTooltip("grimme.info.humat_relic");
 
     public static void register(IForgeRegistry<Item> registry) {
         registry.registerAll(
