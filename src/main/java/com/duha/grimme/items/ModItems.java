@@ -1,7 +1,5 @@
 package com.duha.grimme.items;
 
-import com.duha.grimme.tabs.GrimmeTab;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.registries.IForgeRegistry;
 
