@@ -1,5 +1,9 @@
 #PARSE_ESCAPES
 
+#Books
+item.grimme.obs1.name=Observations I
+item.grimme.obs1.landing=$(o)Observation is one of the most sophisticated and magnificent processes ever executed by a living brain. Evolution, education, reclamation - everything was done through or thanks to it.$(br2)$(l)Goroth Eledisé
+item.grimme.obs1.subtitle=Wrote by Harret Megrigod
 #Gui
 itemGroup.grimme=Grimme Mod
 # Items
