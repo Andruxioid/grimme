@@ -1,2 +1,10 @@
+#
+
 # Items
 item.aegur_relic.name=Relic of Aegur
+item.oruta_relic.name=Relic of Oruta
+item.gerret_relic.name=Relic of Gerret
+item.magan_relic.name=Relic of Magan
+item.humat_relic.name=Relic of Humat
+#Descs
+grimme.info.aegur_relic=He closed himself behind hundreds of doors...
