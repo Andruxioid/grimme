@@ -1,6 +1,7 @@
 package com.duha.grimme.items;
 
 import com.duha.grimme.Grimme;
+import com.duha.grimme.tabs.GrimmeTab;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.creativetab.CreativeTabs;
@@ -23,7 +24,7 @@ public class ItemBase extends Item {
         setRegistryName(name);
     }
 
-    public ItemBase withTooltip(String tootlip) {
+    public ItemBase withTooltip(String tooltip) {
         this.tooltip = tooltip;
 
         return this;

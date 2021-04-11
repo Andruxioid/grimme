@@ -1,5 +1,7 @@
-#
+#PARSE_ESCAPES
 
+#Gui
+itemGroup.grimme=Grimme Mod
 # Items
 item.aegur_relic.name=Relic of Aegur
 item.oruta_relic.name=Relic of Oruta

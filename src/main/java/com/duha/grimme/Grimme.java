@@ -1,6 +1,7 @@
 package com.duha.grimme;
 
 import com.duha.grimme.items.ModItems;
+import com.duha.grimme.tabs.GrimmeTab;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
@@ -33,6 +34,8 @@ public class Grimme
             ModItems.registerModels();
         }
     }
+
+    public static final GrimmeTab creativeTab = new GrimmeTab();
 
     @SidedProxy(serverSide = "com.duha.grimme.CommonProxy", clientSide = "com.duha.grimme.ClientProxy")
     public static CommonProxy proxy;

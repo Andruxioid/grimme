@@ -1,12 +1,13 @@
 package com.duha.grimme.items;
 
+import com.duha.grimme.tabs.GrimmeTab;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.registries.IForgeRegistry;
 
 public class ModItems {
 
-    public static ItemBase aegurRelic = new ItemBase("aegur_relic").setCreativeTab(CreativeTabs.MISC).withTooltip("grimme.info.aegur_relic");
+    public static ItemBase aegurRelic = new ItemBase("aegur_relic").setCreativeTab(GrimmeTab.GrimmeTab).withTooltip("grimme.info.aegur_relic");
     public static ItemBase orutaRelic = new ItemBase("oruta_relic").setCreativeTab(CreativeTabs.MISC).withTooltip("grimme.info.oruta_relic");
     public static ItemBase gerretRelic = new ItemBase("gerret_relic").setCreativeTab(CreativeTabs.MISC).withTooltip("grimme.info.gerret_relic");
     public static ItemBase maganRelic = new ItemBase("magan_relic").setCreativeTab(CreativeTabs.MISC).withTooltip("grimme.info.magan_relic");
