@@ -15,7 +15,7 @@ import java.util.List;
 public class ItemBase extends Item {
 
     protected String name;
-    protected String tooltip;
+    protected String tooltip = "";
 
     public ItemBase(String name) {
         this.name = name;
