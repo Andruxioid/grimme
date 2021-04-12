@@ -10,6 +10,8 @@ public class ModItems {
     public static ItemBase gerretRelic = new ItemBase("gerret_relic").withTooltip("grimme.info.gerret_relic");
     public static ItemBase maganRelic = new ItemBase("magan_relic").withTooltip("grimme.info.magan_relic");
     public static ItemBase humatRelic = new ItemBase("humat_relic").withTooltip("grimme.info.humat_relic");
+    //Books
+    public static BookBase motherBook = new BookBase("mother_book");
 
     public static void register(IForgeRegistry<Item> registry) {
         registry.registerAll(
@@ -27,6 +29,10 @@ public class ModItems {
         registry.registerAll(
                 humatRelic
         );
+        //Books registry
+        registry.registerAll(
+                motherBook
+        );
     }
 
     public static void registerModels() {
@@ -35,6 +41,8 @@ public class ModItems {
         gerretRelic.registerItemModel();
         maganRelic.registerItemModel();
         humatRelic.registerItemModel();
+        //Books
+        motherBook.registerItemModel();
     }
 
 }

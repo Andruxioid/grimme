@@ -1,0 +1,7 @@
+{
+	"name": "item.grimme.mother.name",
+	"landing_text": "item.grimme.mother.landing",
+	"subtitle": "item.grimme.mother.subtitle",
+	"creative_tab": "grimme",
+	"model": "grimme:b_mother"
+}

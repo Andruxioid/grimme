@@ -1,6 +1,11 @@
 #PARSE_ESCAPES
 
 #Books
+#Mother
+item.grimme.mother.name=Mother
+item.grimme.mother.subtitle=Notes of Ann
+item.grimme.mother.landing=$(o)You can't read what's written in the first paper. It seems to be a mixture of scratches, blood and chaotic words.
+#Observations I
 item.grimme.obs1.name=Observations I
 item.grimme.obs1.landing=$(o)Observation is one of the most sophisticated and magnificent processes ever executed by a living brain. Evolution, education, reclamation - everything was done through or thanks to it.$(br2)$(l)Goroth Eledisé
 item.grimme.obs1.subtitle=Wrote by Harret Megrigod
