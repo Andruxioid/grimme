@@ -2,5 +2,6 @@
 	"name": "item.grimme.obs1.name",
 	"landing_text": "item.grimme.obs1.landing",
 	"subtitle": "item.grimme.obs1.subtitle",
-	"creative_tab": "grimme"
+	"creative_tab": "grimme",
+	"model": "grimme:obs1"
 }
