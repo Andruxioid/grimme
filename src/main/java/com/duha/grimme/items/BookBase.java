@@ -1,10 +1,8 @@
 package com.duha.grimme.items;
 
-import client.gui.GuiGrimme;
+import client.gui.BookGuiScreen;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
@@ -19,7 +17,7 @@ public class BookBase extends ItemBase {
     @Override
     public EnumActionResult onItemUse(EntityPlayer player, World worldIn, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
        if(worldIn.isRemote){
-           Minecraft.getMinecraft().displayGuiScreen(new GuiGrimme());
+           Minecraft.getMinecraft().displayGuiScreen(new BookGuiScreen());
        }
         return EnumActionResult.SUCCESS;
     }

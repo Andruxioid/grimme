@@ -48,13 +48,13 @@ public class Grimme
     {
         logger = event.getModLog();
         proxy.preInit(event);
-        logger.info("\u001B!Mod preInitialization :" + Reference.NAME);
+        logger.info("!Mod preInitialization :" + Reference.NAME);
     }
 
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
         proxy.init(event);
-        logger.info("\u001B!Mod initialization :" + Reference.NAME);
+        logger.info("!Mod initialization :" + Reference.NAME);
     }
 }

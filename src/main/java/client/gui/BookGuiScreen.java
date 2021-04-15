@@ -36,10 +36,10 @@ public class BookGuiScreen extends GuiScreen {
     public static int MaxPage;
     public ArrayList<String> BookText = new ArrayList<String>();
     private float angel = 0;
-    private boolean showCount = true;
+    private boolean showCount = false;
     private int countColor = 1;
 
-    public BookGuiScreen(ResourceLocation locationTexture, ResourceLocation locationText) {
+    public BookGuiScreen() {
         BookGuiScreen.locationTexture = locationTexture;
         BookGuiScreen.locationText = locationText;
         Parsing();
@@ -52,6 +52,7 @@ public class BookGuiScreen extends GuiScreen {
         this.countColor = countColor;
         this.showCount = showCount;
         Parsing();
+
     }
 
     private static ArrayList<String> JsonParsing(IResourceManager resourceManager) throws IOException {

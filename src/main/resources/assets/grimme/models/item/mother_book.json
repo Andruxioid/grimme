@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "grimme:items/b_mother"
+        "layer0": "grimme:items/mother_book"
     }
 }
