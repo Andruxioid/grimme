@@ -2,6 +2,8 @@ package com.duha.grimme;
 
 import com.duha.grimme.items.ModItems;
 import com.duha.grimme.tabs.GrimmeTab;
+import com.duha.grimme.utils.Reference;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
@@ -17,10 +19,11 @@ import org.apache.logging.log4j.Logger;
 public class Grimme
 {
     public static final String MODID = "grimme";
-    public static final String NAME = "Grime Mod";
+    public static final String NAME = "Grimme Mod";
     public static final String VERSION = "0.1";
 
-    private static Logger logger;
+    public static Logger logger;
+    public static CreativeTabs grimme;
 
     @Mod.EventBusSubscriber
     public static class RegistrationHandler {
@@ -43,12 +46,15 @@ public class Grimme
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
+        logger = event.getModLog();
         proxy.preInit(event);
+        logger.info("\u001B!Mod preInitialization :" + Reference.NAME);
     }
 
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
         proxy.init(event);
+        logger.info("\u001B!Mod initialization :" + Reference.NAME);
     }
 }

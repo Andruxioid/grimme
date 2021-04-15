@@ -1,6 +1,9 @@
 package com.duha.grimme.items;
 
+import com.duha.grimme.Grimme;
+import com.duha.grimme.utils.Reference;
 import net.minecraft.item.Item;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.registries.IForgeRegistry;
 
 public class ModItems {
@@ -11,7 +14,7 @@ public class ModItems {
     public static ItemBase maganRelic = new ItemBase("magan_relic").withTooltip("grimme.info.magan_relic");
     public static ItemBase humatRelic = new ItemBase("humat_relic").withTooltip("grimme.info.humat_relic");
     //Books
-    public static BookBase motherBook = new BookBase("mother_book");
+    public static final Item motherBook = new CustomBook("mother_book", "text", new ResourceLocation(Reference.MODID, "textures/gui/book.png"), true, 0, 1);
 
     public static void register(IForgeRegistry<Item> registry) {
         registry.registerAll(
@@ -41,8 +44,6 @@ public class ModItems {
         gerretRelic.registerItemModel();
         maganRelic.registerItemModel();
         humatRelic.registerItemModel();
-        //Books
-        motherBook.registerItemModel();
     }
 
 }
