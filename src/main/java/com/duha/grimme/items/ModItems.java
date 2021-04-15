@@ -1,7 +1,8 @@
 package com.duha.grimme.items;
 
-import com.duha.grimme.utils.Reference;
+
 import net.minecraft.item.Item;
+import com.duha.grimme.utils.Reference;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.registries.IForgeRegistry;
 
@@ -38,6 +39,10 @@ public class ModItems {
     }
 
     public static void registerModels() {
+        //Тут проблема какова - когдая я пытаюсь записать в категорию регистрации модели motherBook.registerItemModel();
+        //Всё ломается к херам (error: cannot find symbol) и что делать я без особого понятия; в логах загрузки нету
+        //Ни одного сообщения, которое бы могло указать на то, куда и где делась текстура; самый сок в том,
+        //Что ЖСОН-файл как бы парсится, но из-за отстутсвия регистрации модели он ничего не делает. Прямо как я.
         aegurRelic.registerItemModel();
         orutaRelic.registerItemModel();
         gerretRelic.registerItemModel();

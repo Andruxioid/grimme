@@ -1,6 +1,7 @@
 package com.duha.grimme.items;
 
 import client.gui.BookGuiScreen;
+import com.duha.grimme.Grimme;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.EnumActionResult;
@@ -12,6 +13,10 @@ import net.minecraft.world.World;
 public class BookBase extends ItemBase {
     public BookBase(String name) {
         super(name);
+    }
+
+    public void registerItemModel() {
+        Grimme.proxy.registerItemRenderer(this, 0, name);
     }
 
     @Override
