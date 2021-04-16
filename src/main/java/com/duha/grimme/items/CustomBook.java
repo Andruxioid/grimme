@@ -41,6 +41,10 @@ public class CustomBook extends ItemBase {
         return EnumActionResult.SUCCESS;
     }
 
+    public void registerItemModel() {
+        Grimme.proxy.registerItemRenderer(this, 0, name);
+    }
+
     @SideOnly(Side.CLIENT)
     private void openBook() {
         String lang = "";
