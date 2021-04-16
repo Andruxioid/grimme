@@ -14,7 +14,7 @@ public class ModItems {
     public static ItemBase maganRelic = new ItemBase("magan_relic").withTooltip("grimme.info.magan_relic");
     public static ItemBase humatRelic = new ItemBase("humat_relic").withTooltip("grimme.info.humat_relic");
     //Books
-    public static final Item motherBook = new CustomBook("mother_book", "mother", new ResourceLocation(Reference.MODID, "textures/gui/book.png"), true, 0, 1).withTooltip("info.mother_book");
+    public static final Item motherBook = new CustomBook("mother_book", "mother", new ResourceLocation(Reference.MODID, "textures/gui/list_mother.png"), true, 0, 1).withTooltip("info.mother_book");
 
     public static void register(IForgeRegistry<Item> registry) {
         registry.registerAll(
